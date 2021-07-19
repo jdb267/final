@@ -23,16 +23,16 @@ const students = [
 ]
 
 const campuses = [
-    {name:'',
-imageUrl:'',
-address: '',
-description:''},{name:'',
-imageUrl:'',
-address: '',
-description:''},{name:'',
-imageUrl:'',
-address: '',
-description:''}
+    {name:'Hogwarts',
+imageUrl:'imagestring',
+address: '123 Main St',
+description:'yada yada yada'},{name:'Other campus',
+imageUrl:'imagestring',
+address: '123 Main St',
+description:'yada yada yada'},{name:'Other campus 2',
+imageUrl:'imagestring',
+address: '123 Main St',
+description:'yada yada yada'}
 ]
 
 
@@ -68,6 +68,7 @@ const Student = conn.define('student', {
   
   
   module.exports = {
+    db,
     syncAndSeed,
     models: {
       Student,
